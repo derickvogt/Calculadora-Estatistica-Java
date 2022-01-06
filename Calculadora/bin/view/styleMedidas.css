@@ -1,0 +1,15 @@
+.titulo{
+	-fx-font-size: 22px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.tituloMedidas{
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+	
+}
+
+.medidas{
+	-fx-font-size: 18px;
+}

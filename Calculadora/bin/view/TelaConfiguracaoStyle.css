@@ -1,0 +1,58 @@
+.botaoGerarAtivo{
+	-fx-background-color: linear-gradient(to bottom, rgba(85,153,255,100), rgba(0,0,255,100));
+	-fx-text-fill: white;
+	
+	
+}
+
+
+.dimensoesBotaoGerar{
+	-fx-min-width: 80px;
+	-fx-min-height: 40px;
+	-fx-font-size: 18px;
+}
+
+
+
+.caixaTexto{
+-fx-text-box-border: #4d4d4d;
+-fx-focus-color: #084bf7;
+}
+
+
+
+.botaoGerarAtivo:hover{
+
+	-fx-background-color: linear-gradient(to bottom, rgba(19,36,255,100), rgba(0,15,75,100));
+}
+
+.botaoGerarAtivo:armed{
+	-fx-background-color: linear-gradient(to bottom, rgba(85,153,255,100), rgba(0,152,255,100));
+}
+.titulos-text-field{
+
+   -fx-font-size: 14px;
+   -fx-font-weight: bold;
+}
+
+.botaoProcurar{
+
+-fx-min-width: 120px;
+-fx-min-height: 30px;
+-fx-font-weight: bold;
+-fx-text-fill: #ccc;
+-fx-background-color: linear-gradient(to bottom, rgba(153,153,153,100), rgba(77, 77, 77, 100));
+}
+
+
+.botaoProcurar:hover{
+-fx-background-color: linear-gradient(to bottom, #4d4d4d, #1a1a1a);
+}
+
+.botaoProcurar:armed{
+-fx-background-color: linear-gradient(to bottom, #c8b7b7, #a59797);
+-fx-text-fill: black;
+}
+.labelTitulo{
+-fx-font-size: 25px;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="fundo-padrao" stylesheets="@TelaConfiguracaoStyle.css, @Padrao.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfiguracaoController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="206.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="88.0" minHeight="0.0" prefHeight="21.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label styleClass="labelTitulo" text="Calculadora Estatística" GridPane.columnIndex="3" GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="botaoProcurar" mnemonicParsing="false" onAction="#procurarArquivo" styleClass="botaoProcurar" text="Procurar Arquivo" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <TextField fx:id="textFieldTitulo" onKeyReleased="#habilitarBotaoGerar" styleClass="caixaTexto" GridPane.columnIndex="2" GridPane.columnSpan="7" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Label prefHeight="20.0" prefWidth="139.0" styleClass="titulos-text-field" text="Título da Tabela:" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+      <TextField fx:id="textFieldVariavel" onKeyReleased="#habilitarBotaoGerar" styleClass="caixaTexto" GridPane.columnIndex="2" GridPane.columnSpan="7" GridPane.rowIndex="7" />
+      <Button fx:id="botaoGerar" mnemonicParsing="false" onAction="#botaoGerarTabela" prefHeight="25.0" prefWidth="108.0" styleClass="botaoDesarmado, dimensoesBotaoGerar" text="Gerar" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.columnSpan="6" GridPane.rowIndex="8" />
+      <Label styleClass="titulos-text-field" text="Nome da Variável:" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+      <Label fx:id="labelArquivo" prefHeight="17.0" prefWidth="344.0" text="arquivo" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <HBox  prefHeight="100.0" prefWidth="200.0" styleClass="menuFundo" GridPane.columnSpan="12" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="botaoMenuConfiguracao" mnemonicParsing="false" onAction="#botaoMenuConfiguracao" prefHeight="34.0" prefWidth="106.0" styleClass="botaoMenuArmado" text="Configuração" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoMenuTabela" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#botaoMenuTabela" prefHeight="34.0" prefWidth="92.0" styleClass="botaoMenuDesapertado" text="Tabela" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin></Button>
+            <Button fx:id="botaoMenuPosicao" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" onAction="#botaoMenuPosicao" prefHeight="34.0" prefWidth="146.0" styleClass="botaoMenuDesapertado" text="Medidas de Posição" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin></Button>
+            <Button fx:id="botaoMenuDispersao" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" onAction="#botaoMenuDispersao" prefHeight="34.0" prefWidth="146.0" styleClass="botaoMenuDesapertado" text="Medidas de Dispersão" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin></Button>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
+   </children>
+</GridPane>

@@ -1,0 +1,51 @@
+.table-cell {
+    
+    -fx-border-color: black -fx-box-border black black;
+    -fx-font: 13px "Arial";
+    -fx-text-fill: black;
+    -fx-alignment: top-center;
+}
+
+.table-view {
+    -fx-table-header-border-color: black;
+    -fx-table-cell-border-color: black;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #a6a6a6;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-view .column-header .label {
+	-fx-font: 15px "Arial";
+    -fx-text-fill: white;
+    -fx-background-color: black;
+}
+
+
+
+
+.tabelaTitulo{
+	-fx-alignment: top-center;
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+
+.subtitulos{
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+
+.totaisValores{
+	-fx-font-size: 16px;
+}
+

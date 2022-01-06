@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" styleClass="fundo-padrao" stylesheets="@Padrao.css, @styleMedidas.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MedidasPosicaoController">
+   <children>
+     
+      <Label layoutX="66.0" layoutY="110.0" styleClass="tituloMedidas" text="Média:" />
+      <Label layoutX="66.0" layoutY="274.0" styleClass="tituloMedidas" text="Moda:" />
+      <Label layoutX="66.0" layoutY="186.0" prefHeight="32.0" prefWidth="106.0" styleClass="tituloMedidas" text="Mediana:" />
+      <Label fx:id="labelMedia" layoutX="186.0" layoutY="112.0" styleClass="medidas" text="Label" />
+      <Label fx:id="labelMediana" layoutX="186.0" layoutY="189.0" styleClass="medidas" text="Label" />
+      <Label fx:id="labelModa" layoutX="186.0" layoutY="276.0" styleClass="medidas" text="Label" />
+      <Label fx:id="labelTitulo" layoutX="192.0" layoutY="58.0" prefHeight="32.0" prefWidth="218.0" styleClass="titulo" stylesheets="@styleMedidas.css" text="Medidas de Posição" />
+      <HBox layoutX="-2.0" layoutY="-4.0" prefHeight="44.0" prefWidth="606.0" styleClass="menuFundo">
+         <children>
+            <Button fx:id="botaoMenuConfiguracao" mnemonicParsing="false" onAction="#botaoMenuTabela" prefHeight="34.0" prefWidth="106.0" styleClass="botaoMenuDesapertado" text="Configuração">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoMenuTabela" mnemonicParsing="false" onAction="#botaoMenuTabela" prefHeight="34.0" prefWidth="92.0" styleClass="botaoMenuDesapertado" text="Tabela">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoMenuPosicao" mnemonicParsing="false" prefHeight="34.0" prefWidth="146.0" styleClass="botaoMenuArmado" text="Medidas de Posição">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoMenuDispersao" mnemonicParsing="false" onAction="#botaoMenuDispersao" prefHeight="34.0" prefWidth="146.0" styleClass="botaoMenuDesapertado" text="Medidas de Dispersão">
+               <HBox.margin>
+                  <Insets left="6.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      
+   </children>
+</AnchorPane>
